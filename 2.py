@@ -1,21 +1,12 @@
-def number(A, B):
-    str_A = str(A)
-    str_B = str(B)
+def programm(A, b):
+    return A != B 
 
 
-    index_A = 0
-    for char in str_B:
-        if index_A < len(str_A) and char == str_A[index_A]:
-            index_A += 1
+A = input("Значение A: ") == 'True'
+B = input("Значение B: ") == 'True'
 
 
-    return index_A == len(str_A)
+result = programm(A, b)
 
 
-A = int(input("Число A: "))
-B = int(input("Число B: "))
-
-if number(A, B):
-    print("ДА")
-else:
-    print("НЕТ")
+print("Результат:", result)
